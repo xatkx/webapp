@@ -12,5 +12,4 @@ helper.authenticated = (req, res, next) => {
         res.redirect('/user.sing-in');
     }
 }
-
 module.exports = helper

@@ -1,0 +1,28 @@
+{{#each Alert}}
+
+<div class="alert alert-{{this.status}} alert-dismissible fade show ml-auto alertaa" role="alert">
+  <strong>{{this.msg}}</strong> {{#if this.msg2}} {{this.msg2}} {{/if}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+{{/each}}
+
+{{#each error}}
+<div class="alert alert-danger alert-dismissible fade show ml-auto" 
+  style="
+    right: 10%;
+    position: absolute;
+    min-width: auto;
+    box-shadow:  0px 4px 8px 0px rgba(0,0,0,0.3);
+    z-index: 9;
+    transition: 1.5s;
+  "
+role="alert">
+  <strong>{{this}}</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{/each}}

@@ -1,0 +1,23 @@
+{
+  "name": "ej6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-promise-router": "^3.0.3",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.5.12",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}

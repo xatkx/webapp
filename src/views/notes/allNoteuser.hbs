@@ -1,0 +1,26 @@
+<div class="row">
+    {{#each notes}}
+    <div class="col-sm-3 my-1">
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <hr class="my-2">
+                <p class="card-text">{{task}}</p>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" class="btn btn-outline-dark dropdown-toggles" type="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">list</i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="/notes/add-note">add</a>
+                        <a class="dropdown-item" href="/notes/edit-note/{{_id}}"><i class="material-icons">edit</i></a>
+                        <a class="dropdown-item" href="/notes/del-note/{{_id}}"><i class="material-icons">delete</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

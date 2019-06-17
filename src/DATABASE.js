@@ -1,5 +1,6 @@
 const mongoose = require('mongoose'),
-    uri = 'uri de la base de datos';
+    uri = 'mongodb+srv://xatkx:xatkx123@primerddbb-btain.mongodb.net/test?retryWrites=true';
+
 
 mongoose.connect(uri,{
     useNewUrlParser: true,

@@ -1,9 +1,10 @@
 {{#each Alert}}
 
 <div class="alert alert-{{this.status}} alert-dismissible fade show ml-auto alertaa" role="alert">
-  <strong>{{this.msg}}</strong> {{#if this.msg2}} {{this.msg2}} {{/if}}
+  <strong>{{this.msg}}</strong> {{#if this.icons}} <i class="material-icons h1"> {{this.icons}} </i>{{/if}}
+
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
+    <i class="material-icons">delete</i>
   </button>
 </div>
 

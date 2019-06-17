@@ -34,7 +34,7 @@ module.exports = {
         res.render('user/sing-in')
     },
     logout: async (req, res) => {
-        req.flash('alert',{msg: `acabas de cerrar session ${req.user.nick} vuelve pronto :v`, status: 'info'})
+        req.flash('alert',{msg: `acabas de cerrar session ${req.user.nick} vuelve pronto `,icons: 'insert_emoticon' ,status: 'info'})
         req.logout();
         res.redirect('/')
     }

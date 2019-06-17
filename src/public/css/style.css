@@ -1,10 +1,12 @@
 .alertaa {
     right: 10%;
+    left: 10%;
     position: absolute;
-    min-width: auto;
+    min-width: 80%;
     box-shadow:  0px 4px 6px 0px rgba(0,0,0,0.3);
     z-index: 9;
     transition: 1.5s;
+    text-align: center;
 }
 
 .show

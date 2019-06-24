@@ -1,5 +1,5 @@
 const mongoose = require('mongoose'),
-    uri = 'mongodb+srv://xatkx:xatkx123@primerddbb-btain.mongodb.net/test?retryWrites=true';
+    uri = 'db uri';
 
 
 mongoose.connect(uri,{

@@ -28,7 +28,7 @@ module.exports = {
         newuser.password = await newuser.bcrypt(password)
         await newuser.save()
         req.flash('alert',{msg: `usuario creado: ${newuser.nick} asi creado perra`,status: 'info'})
-        res.redirect('/notes')
+        res.redirect('/user/sign-in')
     },
     signin: async (req, res) => {
         res.render('user/sing-in')

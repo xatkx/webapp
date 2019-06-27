@@ -6,7 +6,7 @@ const express = require('express'),
 // init
 const app = express();
 require('./DATABASE.js');
-require('./config/passport')
+require('./config/passport');
 
 // setting
 app.set('PORT', 8888)

@@ -2,7 +2,7 @@ const Notes = require('../../modals/notes');
 
 module.exports = {
     allNoteuser: async (req, res) => {
-        notes = await Notes.find({}).sort({
+        notes = await Notes.find({ userid: req.user.id}).sort({
             date: 'desc'
         })
         res.render('notes/allNoteuser', {
@@ -20,7 +20,8 @@ module.exports = {
 
         const newNote = new Notes({
             title,
-            task
+            task,
+            userid: req.user.id
         })
         await newNote.save()
         req.flash('alert', {
